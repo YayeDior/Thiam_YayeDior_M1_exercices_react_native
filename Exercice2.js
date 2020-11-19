@@ -1,44 +1,27 @@
-import React from 'react';
-import { StyleSheet, Button, View, SafeAreaView, Text, Alert } from 'react-native';
-
-const Separator = () => (
-  <View style={styles.separator} />
-);
-
-const Exercice2= () => (
-  <SafeAreaView style={styles.container}>
-    <View>
-      <Text style={styles.title}>
-        Button 1
-      </Text>
-      <Button
-        title="Button 1"
-        onPress={() => this.coucou()}
+import React from 'react'
+import {View,StyleSheet,Button,alert,Text} from 'react-native'
+class Exercice2 extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = { count: 0 };
+      }
+    
+      onPress = () => {
+        this.setState({
+          count: this.state.count + 1
+        });
+      };
+    
+    render() {
+      return (
+        <View style={[{backgroundColor: this.props.color},styles.secondcontainer]}>
+            <Button     title="Press me"
+        onPress={() => Alert.alert('Simple Button pressed')}
       />
-    </View>
-    <Separator />
-    </SafeAreaView>
-);
-const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      justifyContent: 'center',
-      marginHorizontal: 16,
-    },
-    title: {
-      textAlign: 'center',
-      marginVertical: 8,
-    },
-    fixToText: {
-      flexDirection: 'row',
-      justifyContent: 'space-between',
-    },
-    separator: {
-      marginVertical: 8,
-      borderBottomColor: '#737373',
-      borderBottomWidth: StyleSheet.hairlineWidth,
-    },
-  });
-  
-  export default Exercice2;
+          <Text>hello</Text>
+        </View>
+      )
+    }
+}
+export default Exercice2  
 
