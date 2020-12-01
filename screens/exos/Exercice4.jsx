@@ -1,5 +1,7 @@
 import React from 'react'
 import {View,StyleSheet,Button,alert,Text} from 'react-native'
+import ButtonCustom from '../../components/ButtonCustom';
+
 class Exercice4 extends React.Component {
     constructor(props) {
         super(props);
@@ -14,20 +16,34 @@ class Exercice4 extends React.Component {
     
     render() {
       return (
-        <View style={[{backgroundColor: this.props.color},styles.forcontainer]}>
-            <Button     props="You have pressed the button: 4 time(s)"
+        <View style={[{backgroundColor: this.props.color},styles.container]}>
+
+      <Button title="You have pressed the button:"
         onPress={() => Alert.alert('Simple Button pressed')}
-      />
-      <Button     props=" Press me"
+      />       
+       <Button title="Press me"
         onPress={() => Alert.alert('Simple Button pressed')}
-        />
+      />    
         </View>
       )
     }
 }
 const styles = StyleSheet.create({
-
-    forcontainer: {height:50, width:60,position:"relative",top: 10,left: 150}
-})
+  container: {
+ flexDirection: 'row-reverse',
+ justifyContent: 'space-around',
+ backgroundColor: "#fff",
+ },
+ button: {
+   alignItems: "center",
+   backgroundColor: "#DDDDDD",
+   padding: 10,
+ },
+ countContainer: {
+   alignItems: "center",
+   padding: 10,
+ },
+    
+});
 
 export default Exercice4 
