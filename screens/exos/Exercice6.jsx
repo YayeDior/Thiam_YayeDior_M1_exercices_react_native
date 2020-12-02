@@ -25,7 +25,6 @@ function Exercice6() {
     return (
 
          <View style={styles.container}>
-
            <ScrollView>
            { poeple.map((item) => {
              return (

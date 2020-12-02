@@ -8,6 +8,11 @@ import ButtonCustom from '../../components/ButtonCustom';
    {
      alert("Hello");
    }
+   const Show2=()=>
+   {
+     alert("goodbye");
+   }
+
   return (
     <View style={styles.container}>
         <View style={styles.forcontainer}>
@@ -16,7 +21,7 @@ import ButtonCustom from '../../components/ButtonCustom';
         action={Show1}
       />       
        <ButtonCustom text="Say goodbye"
-      action={Show1}
+      action={Show2}
       />       
     </View>
     </View>

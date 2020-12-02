@@ -18,10 +18,10 @@ class Exercice12 extends React.Component {
       return (
         <View style={[{backgroundColor: this.props.color},styles.container]}>
 
-      <Button title="Press Count:"
+      <ButtonCustom text="Press Count:"
         onPress={() => Alert.alert('Simple Button pressed')}
       />       
-       <Button title="Press me"
+       <ButtonCustom text="Press me"
         onPress={() => Alert.alert('Simple Button pressed')}
       />    
         </View>

@@ -1,10 +1,9 @@
 import React from "react";
 import { StyleSheet, View } from "react-native";
 import ListExo from "./ListExo";
-import "react-native-gesture-handler";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
-
+import "react-native-gesture-handler";
 import Exercice1 from "./exos/Exercice1";
 import Exercice2 from "./exos/Exercice2";
 import Exercice3 from "./exos/Exercice3";
@@ -24,8 +23,8 @@ function FinalPage() {
   return (
     <View style={styles.container}>
       <NavigationContainer>
-        <Stack.Navigator initialRouteName="Liste d'exercices">
-          <Stack.Screen name="Liste d'exercices" component={ListExo} />
+        <Stack.Navigator initialRouteName="Exercices">
+          <Stack.Screen name="Exercices" component={ListExo} />
           <Stack.Screen name="Exercice 1" component={Exercice1} />
           <Stack.Screen name="Exercice 2" component={Exercice2} />
           <Stack.Screen name="Exercice 3" component={Exercice3} />
@@ -47,7 +46,7 @@ function FinalPage() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "#FFC0CB",
   },
 });
 

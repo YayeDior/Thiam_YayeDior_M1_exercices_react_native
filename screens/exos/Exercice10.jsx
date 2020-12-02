@@ -4,17 +4,17 @@ import Constants from 'expo-constants';
 import ButtonCustom from '../../components/ButtonCustom';
 
  function Exercice10() {
- Show1=("Hello")
+  const Show1=()=>
   {
     alert("Hello");
   }
   return (
       <View style={styles.container}>
-      <ButtonCustom title="Button1" onPress={() => this.Show1.bind(this,"Hello")}/>
-      <ButtonCustom title="Button1" onPress={() => this.Show1.bind(this,"Hello")} />
-     <ButtonCustom title="Button1" onPress={() => this.Show1.bind(this,"Hello")} />
-     <ButtonCustom title="Button1" onPress={() => this.Show1.bind(this,"Hello")} />
-     <ButtonCustom title="Button1" onPress={() => this.Show1.bind(this,"Hello")} />
+     <ButtonCustom text="Button1" action={Show1}/>
+     <ButtonCustom text="Button2" action={Show1} />
+     <ButtonCustom text="Button3" action={Show1} />
+     <ButtonCustom text="Button4" action={Show1} />
+     <ButtonCustom text="Button5" action={Show1} />
     
     </View>
   );

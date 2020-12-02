@@ -11,7 +11,7 @@ function Exercice7() {
            <Text>What is your name?</Text>
            <TextInput 
            style={styles.input}
-           placeholder='John De7'
+           placeholder='John'
           />
            <Text>Say hello</Text>
       
